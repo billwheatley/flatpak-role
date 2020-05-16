@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  role_name: flatpak
+  author: Garrett Hyde
+  description: Install Flatpak applications on Fedora
+  issue_tracker_url: https://github.com/ghyde/ansible-role-flatpak/issues
+  license: MIT
+  min_ansible_version: 2.8
+  platforms:
+  - name: Fedora
+    versions:
+    - 31
+    - 32
+  galaxy_tags:
+  - fedora
+  - flatpak
+...
