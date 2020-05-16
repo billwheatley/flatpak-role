@@ -1,0 +1,9 @@
+---
+- name: install application
+  flatpak:
+    name: "{{ item.name }}"
+    state: present
+    method: system
+    remote: "{{ item.remote | default('flathub') }}"
+  loop: "{{ flatpak_apps }}"
+...
