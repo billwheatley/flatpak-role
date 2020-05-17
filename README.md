@@ -1,5 +1,7 @@
 # Flatpak
 
+[![Build Status](https://travis-ci.org/ghyde/ansible-role-flatpak.svg?branch=master)](https://travis-ci.org/ghyde/ansible-role-flatpak)
+
 Install [Flatpak][flatpak] applications on Fedora.
 
 ## Role Variables
