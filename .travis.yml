@@ -1,19 +1,23 @@
 ---
+dist: xenial
+
+# Python versions
 language: python
-python: "2.7"
+python:
+  - "3.8"
+  - "3.7"
+  - "3.6"
 
-# Use the new container infrastructure
-sudo: false
 
-# Install ansible
+# Install pip3
 addons:
   apt:
     packages:
-    - python-pip
+    - python3-pip
 
 install:
   # Install ansible
-  - pip install ansible
+  - pip3 install ansible
 
   # Check ansible version
   - ansible --version
