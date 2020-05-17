@@ -1,4 +1,11 @@
 ---
+- name: add repository remote
+  flatpak_remote:
+    name: "{{ item.name }}"
+    state: present
+    flatpakrepo_url: "{{ item.url }}"
+    method: system
+  loop: "{{ flatpak_repos }}"
 - name: install application
   flatpak:
     name: "{{ item.name }}"

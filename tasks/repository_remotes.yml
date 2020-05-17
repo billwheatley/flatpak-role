@@ -1,9 +1,0 @@
----
-- name: add repository remotes
-  flatpak_remote:
-    name: "{{ item.name }}"
-    state: present
-    flatpakrepo_url: "{{ item.url }}"
-    method: system
-  loop: "{{ flatpak_repos }}"
-...

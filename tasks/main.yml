@@ -1,7 +1,6 @@
 ---
 - block:
   - import_tasks: install_flatpak.yml
-  - import_tasks: repository_remotes.yml
   - import_tasks: install_apps.yml
   tags:
   - flatpak
