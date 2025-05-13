@@ -1,6 +1,10 @@
 ---
 - block:
-  - import_tasks: install_flatpak.yml
+  - import_tasks: install_flatpak-rh.yml
+    when: ansible_os_family in ('RedHat')
+  - import_tasks: install_flatpak-om.yml
+    when: ansible_os_family in ('OpenMandriva')
+    
   - import_tasks: install_apps.yml
   tags:
   - flatpak

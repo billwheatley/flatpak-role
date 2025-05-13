@@ -1,12 +1,13 @@
 ---
-- name: add repository remote
+- name: Ensure Flatpak Repositories are Present
   flatpak_remote:
     name: "{{ item.name }}"
     state: present
     flatpakrepo_url: "{{ item.url }}"
     method: system
   loop: "{{ flatpak_repos }}"
-- name: install application
+
+- name: Ensure Flatpak Applications are Present 
   flatpak:
     name: "{{ item.name }}"
     state: present

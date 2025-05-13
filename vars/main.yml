@@ -1,7 +1,9 @@
 ---
-flatpak_packages:
+flatpak_packages_rh:
   - flatpak
   - flatpak-libs
   - flatpak-selinux
   - flatpak-session-helper
+flatpak_packages_om:
+  - flatpak
 ...

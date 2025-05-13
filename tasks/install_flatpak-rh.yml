@@ -1,0 +1,8 @@
+---
+- name: (Red Hat) Ensure Flatpak Packages are Present
+  dnf:
+    name: "{{ flatpak_packages_rh }}"
+    state: present
+  become: True
+  become_user: root
+...

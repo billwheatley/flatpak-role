@@ -1,8 +1,0 @@
----
-- name: install Flatpak
-  dnf:
-    name: "{{ flatpak_packages }}"
-    state: present
-  become: True
-  become_user: root
-...

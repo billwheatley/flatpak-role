@@ -1,17 +1,18 @@
 ---
 galaxy_info:
   role_name: flatpak
-  author: Garrett Hyde
-  description: Install Flatpak applications on Fedora
-  issue_tracker_url: https://github.com/ghyde/ansible-role-flatpak/issues
+  author: Bill Wheatley
+  description: Install Flatpak applications on Red Hat Family distros (with dnf) or Open Mandriva
+  issue_tracker_url: https://github.com/billwheatley/flatpak-role/issues
   license: MIT
-  min_ansible_version: 2.6
+  min_ansible_version: '2.6'
   platforms:
   - name: Fedora
     versions:
-    - 31
-    - 32
+    - '42'
   galaxy_tags:
   - fedora
+  - redhat
+  - openmandriva
   - flatpak
 ...
