@@ -1,0 +1,8 @@
+---
+- name: (Debian) Ensure Flatpak Package is Present
+  dnf:
+    name: "{{ flatpak_packages_debian }}"
+    state: present
+  become: True
+  become_user: root
+...
