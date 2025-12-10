@@ -29,10 +29,11 @@ flatpak_repos:
 
 ### vars/main.yml
 
-| name                | description                                                | type | default                                                          |
-| ------------------- | ---------------------------------------------------------- | ---- | ---------------------------------------------------------------- |
-| flatpak_packages_rh | RPM packages for Red Hat Distributions required by Flatpak | List | [flatpak, flatpak-lib, flatpack-selinux, flatpak-session-helper] |
-| flatpak_packages_om | RPM packages for Open Mandriva required by Flatpak         | List | [flatpak]                                                        |
+| name                    | description                                                | type | default                                                          |
+| ----------------------- | ---------------------------------------------------------- | ---- | ---------------------------------------------------------------- |
+| flatpak_packages_rh     | RPM packages for Red Hat Distributions required by Flatpak | List | [flatpak, flatpak-lib, flatpack-selinux, flatpak-session-helper] |
+| flatpak_packages_om     | RPM packages for Open Mandriva required by Flatpak         | List | [flatpak]                                                        |
+| flatpak_packages_debian | deb packages for Debian required by Flatpak                | List | [flatpak]                                                        |
 
 ## Example Playbooks
 
