@@ -1,6 +1,6 @@
 # Flatpak Ansible role
 
-Install [Flatpak] applications on Red Hat family of distributions or OpenMandriva.
+Install [Flatpak] applications on Red Hat family, OpenMandriva family or Debian family distributions 
 
 Flatpacks can be found in a variety of sources [flathub](https://flathub.org/) is a common place
 
