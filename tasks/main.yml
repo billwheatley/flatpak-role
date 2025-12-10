@@ -4,6 +4,8 @@
     when: ansible_os_family in ('RedHat')
   - import_tasks: install_flatpak-om.yml
     when: ansible_os_family in ('OpenMandriva')
+  - import_tasks: install_flatpak-debian.yml
+    when: ansible_os_family in ('Debian')
     
   - import_tasks: install_apps.yml
   tags:
