@@ -6,4 +6,6 @@ flatpak_packages_rh:
   - flatpak-session-helper
 flatpak_packages_om:
   - flatpak
+flatpak_packages_debian:
+  - flatpak
 ...
